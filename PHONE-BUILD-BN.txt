@@ -1,0 +1,11 @@
+শুধু Android ফোন দিয়ে APK বানানোর নিয়ম
+
+১) ZIP ফাইলটি Extract করুন।
+২) https://github.com এ গিয়ে একটি অ্যাকাউন্ট খুলুন/লগইন করুন।
+৩) New repository তৈরি করুন; নাম দিন OfficeCashCounter এবং Public নির্বাচন করুন।
+৪) ফোনের ব্রাউজারে Desktop site চালু করে Add file > Upload files নির্বাচন করুন। Extract করা প্রজেক্টের সব ফাইল ও .github ফোল্ডারসহ আপলোড করে Commit changes চাপুন।
+৫) Repository-র Actions ট্যাবে যান। “Build Android APK” workflow নির্বাচন করে Run workflow চাপুন।
+৬) Build শেষ হলে সবুজ টিক দেখাবে। সেই workflow run খুলে নিচের Artifacts থেকে OfficeCashCounter-debug-apk ডাউনলোড করুন।
+৭) ZIP Extract করে app-debug.apk ফাইলে চাপুন। Android চাইলে ওই অ্যাপ/ব্রাউজারের জন্য “Install unknown apps” অনুমতি দিন, তারপর Install করুন।
+
+নোট: GitHub-এ ফাইল আপলোডের সময় .github ফোল্ডারটি বাদ দেবেন না। Build করতে ইন্টারনেট লাগবে। এই APK debug build; Play Store release নয়।
